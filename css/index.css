@@ -187,12 +187,12 @@ img {
 }
 
 .card>.image {
-  flex: 400px;
+  flex: 1;
 }
 
 .image>img {
-  width: 300px;
-  height: 300px;
+  width: 20vmax;
+  height: 20vmax;
   border-radius: 50%;
   margin: 20px;
 }
@@ -238,10 +238,10 @@ a:nth-child(2n)>.new-item {
 .more-details {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 30vh;
+  grid-template-rows: 400px;
   justify-items: center;
   align-items: center;
-  padding:20px;
+  padding:30px;
   margin-bottom: 10px;
   text-align: center;
   font-size: 2.2em;
