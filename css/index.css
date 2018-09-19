@@ -115,6 +115,8 @@ img.logo {
   height: 100px;
 }
 
+
+
 nav,
 footer {
   /* height: 50px; */
@@ -243,7 +245,7 @@ a:nth-child(2n)>.new-item {
   margin-bottom: 10px;
   text-align: center;
   font-size: 2.2em;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.2;
 
 }
@@ -251,16 +253,19 @@ a:nth-child(2n)>.new-item {
 .mission {
   background-image: var(--rainbow);
   object-fit: cover;
+  padding:30px;
 }
 
 .vision {
   background-image: var(--rainbow);
   object-fit: cover;
+  padding:30px;
 }
 
 .values {
   background-image: var(--rainbow);
   object-fit: cover;
+  padding:30px;
 }
 
 footer {
@@ -269,4 +274,21 @@ footer {
   justify-items: center;
   font-size: 3em;
   font-weight: 400;
+}
+
+/* dropdown feature */
+nav a span#dropdown a {
+  display: none;
+}
+
+nav > a:hover a {
+  display: block;
+}
+
+.carousel {
+  margin-top: 10px;
+  padding: 0;
+  width: 80vw;
+  height: 400px;
+  object-fit: fit;
 }
