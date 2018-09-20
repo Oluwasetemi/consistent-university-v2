@@ -221,7 +221,14 @@ nav a:hover {
 }
 
 .admission > * {
-  display: inline-block;
+  float: left;
+  width: 33%;
+}
+
+@supports (display:grid) {
+  .admission > * {
+    width: auto;
+  }
 }
 
 .welcome-address,
@@ -275,9 +282,10 @@ img:hover {
   opacity: .5;
 }
 
-/* .card-like>.body {
-  flex: 3;
-} */
+.card-like>.body {
+  flex: 400px;
+  width: 400px;
+}
 
 .body p {
   /* font-family: Roboto; */
@@ -330,8 +338,16 @@ a:nth-child(2n)>.new-item {
 }
 
 .more-details> * {
-  display: table-cell;
+  /* display: table-cell; */
+  float: left;
+  width: 33%;
 
+}
+
+@supports (display:grid) {
+  .more-details > * {
+    width: 300px;
+  }
 }
 
 .more {
